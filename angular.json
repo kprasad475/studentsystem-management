@@ -31,15 +31,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/style.css"            ],
+            "scripts": [
             ],
-            "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -107,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fe0b83ba-3415-436f-9183-10d73b765704"
   }
 }
